@@ -8,5 +8,6 @@
 *.log
 uploads/
 *.sql
+!schema.sql
 composer.phar
 composer.lock
