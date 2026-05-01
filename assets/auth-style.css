@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e9f0e9; /* Light green background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.auth-container {
+    background: white;
+    display: flex;
+    border-radius: 30px; /* Large rounded corners like your pic */
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Left Half with Image */
+.auth-left {
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.auth-left h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Right Half with Form */
+.auth-right {
+    flex: 1;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.auth-right h2 {
+    font-size: 2rem;
+    color: #1b3c1b;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #f0f4f0; /* Light grey-green input */
+    border-radius: 10px;
+    outline: none;
+}
+
+.forgot-pass {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+/* The Dark Green Button from your image */
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background: #053005; /* Very dark green */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0a4d0a;
+    transform: scale(1.02);
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.footer-text a {
+    color: #053005;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+    .auth-left {
+        padding: 40px;
+        min-height: 200px;
+    }
+}
